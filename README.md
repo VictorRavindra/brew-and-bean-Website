@@ -2,7 +2,7 @@
 
 A fully responsive website for a fictional neighbourhood café. **Concept project** built to show a complete small-business website.
 
-**Live demo:** `https://VictorRavindra.github.io/brew-and-bean/`
+**Live demo:** `https://victorravindra.github.io/brew-and-bean-Website/`
 
 ## Features
 
