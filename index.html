@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew &amp; Bean | Neighbourhood Café</title>
+  <meta name="description" content="Brew & Bean is a neighbourhood café serving small-batch coffee, fresh bakes and all-day breakfast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="logo" aria-label="Brew and Bean home">
+        <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><ellipse cx="16" cy="16" rx="10" ry="14" fill="currentColor"/><path d="M16 4c-4 6 4 18 0 24" stroke="var(--sage)" stroke-width="2" fill="none"/></svg>
+        <span>Brew &amp; Bean</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a href="#book" class="btn btn-small">Book a table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Slow coffee for fast mornings.</h1>
+          <p class="lead">Small-batch beans roasted every Monday, bakes out of the oven by 7&nbsp;am, and a corner table with your name on it.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn">See the menu</a>
+            <a href="#book" class="btn btn-ghost">Book a table</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>Open daily</dt><dd>7 am – 10 pm</dd></div>
+            <div><dt>Roasted</dt><dd>In-house, weekly</dd></div>
+            <div><dt>Seats</dt><dd>40 indoor, 12 garden</dd></div>
+          </dl>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 420" class="cup">
+            <g class="steam">
+              <path d="M170 90c-20-30 20-40 0-75" />
+              <path d="M205 95c-20-30 20-40 0-80" />
+              <path d="M240 90c-20-30 20-40 0-75" />
+            </g>
+            <ellipse cx="205" cy="380" rx="170" ry="26" fill="var(--sage-dark)" opacity=".25"/>
+            <ellipse cx="205" cy="360" rx="150" ry="28" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+            <path d="M85 150h240l-20 175c-3 22-22 38-44 38H149c-22 0-41-16-44-38z" fill="var(--forest)" stroke="var(--ink)" stroke-width="4"/>
+            <path d="M325 185c45 0 55 70 5 85" fill="none" stroke="var(--ink)" stroke-width="14" stroke-linecap="round"/>
+            <path d="M325 185c45 0 55 70 5 85" fill="none" stroke="var(--forest)" stroke-width="7" stroke-linecap="round"/>
+            <ellipse cx="205" cy="150" rx="120" ry="22" fill="#6b4226" stroke="var(--ink)" stroke-width="4"/>
+            <path d="M175 150c15-14 45-14 60 0-15 10-45 10-60 0z" fill="#e8c9a0"/>
+            <text x="205" y="265" text-anchor="middle" class="cup-label">B&amp;B</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu">
+      <div class="container">
+        <div class="section-head">
+          <h2>On the menu</h2>
+          <p>Prices include taxes. Ask us about oat, almond and soy milk at no extra cost.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" aria-selected="true" data-tab="coffee">Coffee</button>
+          <button role="tab" aria-selected="false" data-tab="tea">Tea &amp; more</button>
+          <button role="tab" aria-selected="false" data-tab="bakes">Bakes</button>
+          <button role="tab" aria-selected="false" data-tab="plates">All-day plates</button>
+        </div>
+        <ul class="menu-list" id="menu-list" role="tabpanel" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <section id="story" class="section story">
+      <div class="container story-grid">
+        <div class="story-quote">
+          <p>“We started with one second-hand roaster and a rule: if we wouldn't drink it twice, we don't serve it once.”</p>
+          <span>Meera &amp; Arjun, founders</span>
+        </div>
+        <div class="story-text">
+          <h2>A small café that takes coffee seriously</h2>
+          <p>Brew &amp; Bean opened in 2019 in a converted print shop. We buy green beans directly from three estates in the Western Ghats, roast them ourselves, and change the single-origin pour-over every fortnight.</p>
+          <p>Everything on the bakery shelf is made on site each morning. What doesn't sell by closing goes to the shelter down the road.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2>Inside the café</h2>
+          <p>Tap any picture to see it larger.</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section id="book" class="section book">
+      <div class="container book-grid">
+        <div>
+          <h2>Book a table</h2>
+          <p>Reservations are held for 15 minutes. For groups larger than 8, call us on <a href="tel:+910000000000">+91 00000 00000</a>.</p>
+          <ul class="book-notes">
+            <li>Garden seating is first come, first served</li>
+            <li>Dogs welcome on the garden side</li>
+            <li>Free Wi-Fi, power at every window seat</li>
+          </ul>
+        </div>
+        <form id="booking-form" class="booking-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" required />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="time">Time</label>
+              <select id="time" name="time" required></select>
+              <small class="error" aria-live="polite"></small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="guests">Guests</label>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="Fewer guests">−</button>
+              <input id="guests" name="guests" type="number" min="1" max="8" value="2" />
+              <button type="button" data-step="1" aria-label="More guests">+</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-block">Book table</button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit">
+      <div class="container visit-grid">
+        <div>
+          <h2>Find us</h2>
+          <address>
+            14 Market Lane, Green Park<br />
+            Open every day, 7 am – 10 pm
+          </address>
+          <table class="hours">
+            <caption class="sr-only">Opening hours</caption>
+            <tr><th scope="row">Mon – Fri</th><td>7:00 am – 10:00 pm</td></tr>
+            <tr><th scope="row">Saturday</th><td>8:00 am – 11:00 pm</td></tr>
+            <tr><th scope="row">Sunday</th><td>8:00 am – 9:00 pm</td></tr>
+          </table>
+          <p class="open-status" id="open-status"></p>
+        </div>
+        <div class="map" aria-label="Illustrated map of the café location">
+          <svg viewBox="0 0 400 280" role="img" aria-labelledby="map-title">
+            <title id="map-title">Map showing Brew &amp; Bean on Market Lane, next to Green Park</title>
+            <rect width="400" height="280" fill="var(--sage)"/>
+            <rect x="250" y="20" width="130" height="110" rx="8" fill="#b9cfa4"/>
+            <text x="315" y="80" text-anchor="middle" class="map-text">Green Park</text>
+            <path d="M0 160h400M150 0v280" stroke="var(--paper)" stroke-width="22"/>
+            <path d="M0 230h400" stroke="var(--paper)" stroke-width="12"/>
+            <text x="20" y="152" class="map-text">Market Lane</text>
+            <circle cx="200" cy="140" r="16" fill="var(--mustard)" stroke="var(--ink)" stroke-width="3"/>
+            <circle cx="200" cy="140" r="5" fill="var(--ink)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Brew &amp; Bean. A concept project.</p>
+      <nav aria-label="Social links">
+        <a href="#top">Instagram</a>
+        <a href="#top">Google Maps</a>
+        <a href="#top">Order online</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close picture">×</button>
+    <figure>
+      <div class="lightbox-img" id="lightbox-img"></div>
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
