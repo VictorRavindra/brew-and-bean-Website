@@ -25,9 +25,4 @@ A fully responsive website for a fictional neighbourhood café. **Concept projec
 
 Open `index.html` in a browser. That's it.
 
-## Deploy to GitHub Pages
 
-1. Create a new public repository named `brew-and-bean` and upload these files.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then **Save**.
-4. Your site will be live at `https://<your-username>.github.io/brew-and-bean/` within a minute or two.
